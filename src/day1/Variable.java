@@ -16,7 +16,7 @@ public class Variable {
         // = 기준 오른쪽 값을 왼쪽 변수에 저장
 
         int age; // 그릇 만들고
-        age = 25; // 그릇에 저장
+        age = 26; // 그릇에 저장
 
 
         // 변수 사용시 주의할 점.
@@ -36,11 +36,38 @@ public class Variable {
         // 홍길동의 나이를 한번만 사용해서 자기소개 5번 출력
         // 홍길동의 나이를 26으로 수정해보세요.
 
-        System.out.println("안녕하세요 저는 25살 홍길동입니다.");
-        System.out.println("안녕하세요 저는 25살 홍길동입니다.");
-        System.out.println("안녕하세요 저는 25살 홍길동입니다.");
-        System.out.println("안녕하세요 저는 25살 홍길동입니다.");
-        System.out.println("안녕하세요 저는 25살 홍길동입니다.");
+        System.out.println("안녕하세요 저는 " + age +"살 홍길동입니다.");
+        System.out.printf("안녕하세요 저는 %d살 홍길동입니다.\n", age);
+        System.out.printf("안녕하세요 저는 %d살 홍길동입니다.\n", age);
+        System.out.printf("안녕하세요 저는 %d살 홍길동입니다.\n", age);
+        System.out.printf("안녕하세요 저는 %d살 홍길동입니다.\n", age);
+
+
+        // 변수 사용법2
+        // 변수 재활용 가능(단, 하나의 값만 저장 가능)
+        int num = 10; // int를 저장하는 num이라는 이름의 변수 생성하고 10 저장
+
+        System.out.println(num); // 10 출력
+
+        num = 20; // num이라는 이름의 변수를 가져와서 기존의 10 버리고, 20을 저장.
+
+        System.out.println(num);
+
+        num = 30;
+
+        System.out.println(num);
+
+
+        // 변수의 값을 다른 변수에 대입 가능
+        int num2 = 50;
+
+        System.out.println(num2);
+
+        num2 = num;
+
+        System.out.println(num2);
+
+        num2 = num2;
 
 
     }
